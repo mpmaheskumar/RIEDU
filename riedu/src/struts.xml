@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="false" />
+ <package name="org.riedu.action" extends="struts-default">
+
+ <action name="welcome" class="org.riedu.action.welcome" method="execute">
+	 <result name="success">/jsp/index.jsp</result>
+	 <result name="error">/jsp/error.jsp</result>
+ </action>
+
+ </package>
+</struts>
